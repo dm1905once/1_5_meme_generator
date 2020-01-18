@@ -1,0 +1,69 @@
+
+.hidden {
+    display: none;
+}
+
+#memeItem {
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.closeButtonDisplay {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#overlay{
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.25;
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+}
+
+#memeItem:hover #overlay{
+    opacity: 1;
+}
+
+.memeTextTop {
+    position:absolute; 
+    right: 0; 
+    left: 0;
+    top: 0;
+    font-size: 3em;
+    font-family: impact;
+    text-transform: uppercase;
+    color: rgba(255,255,255, 0.8);
+    margin: 15px 0 ;
+    padding: 0 5px;
+}
+
+.memeTextBottom {
+    position:absolute; 
+    right: 0; 
+    left: 0;
+    bottom: 0;
+    font-size: 3em;
+    font-family: impact;
+    text-transform: uppercase;
+    color: rgba(255,255,255, 0.8);
+    margin: 15px 0 ;
+    padding: 0 5px;
+}
+
+#memeItem:hover .memeTextTop {
+    opacity: 0.5;
+}
+
+#memeItem:hover .memeTextBottom {
+    opacity: 0.5;
+}
